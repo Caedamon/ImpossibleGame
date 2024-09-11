@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Spike
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":195.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-661.0,"y":-253.0},"guid":"e223c167-a63c-4d28-8054-ff089abfe471","$version":"A","$type":"Unity.VisualScripting.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-414.0,"y":-20.0},"guid":"4b9ac9e2-5db2-463a-bd96-62d0582daf7c","$version":"A","$type":"Unity.VisualScripting.FixedUpdate"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-227.0,"y":381.0},"guid":"627c7698-4d44-47fc-92ed-540c7a30b639","$version":"A","$type":"Unity.VisualScripting.OnCollisionEnter2D"},{"chainable":false,"parameterNames":["obj","t"],"member":{"name":"Destroy","parameterTypes":["UnityEngine.Object","System.Single"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%obj":{"$content":0,"$type":"UnityEngine.Object"},"%t":{"$content":0.0,"$type":"System.Single"}},"position":{"x":202.0,"y":118.0},"guid":"2fbdb166-d703-4d7e-ba27-a5ef08c6fac1","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"15"},{"chainable":false,"parameterNames":["collider"],"member":{"name":"IsTouchingLayers","parameterTypes":["UnityEngine.Collider2D"],"targetType":"UnityEngine.Physics2D","targetTypeName":"UnityEngine.Physics2D","$version":"A"},"defaultValues":{"%collider":null},"position":{"x":-99.0,"y":137.0},"guid":"fca28701-67e3-46f1-90b3-4a27106e63bb","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"19"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"PlayerChar","$type":"System.String"},"object":null},"position":{"x":-333.0,"y":146.0},"guid":"689d3c5d-0428-4fa4-b136-3eb13d44f8e9","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"23"},{"sourceUnit":{"$ref":"19"},"sourceKey":"exit","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"1b07acc5-49a7-4847-b673-600ad13db62c","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"value","destinationUnit":{"$ref":"19"},"destinationKey":"%collider","guid":"61558940-a2c7-4271-9b69-a769737c71a5","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 2800000, guid: ec6e90b8a9b354546b64ae72b2d5c66a, type: 3}
